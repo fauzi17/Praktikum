@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
 
         val textView1 = findViewById<TextView>(R.id.textView1)
 
-        textView1.setOnClickListener(View.OnClickListener {
+        textView1.setOnClickListener {
         Toast.makeText(this,"hai", Toast.LENGTH_LONG).show()
         })
     }
