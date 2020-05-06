@@ -15,8 +15,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val textView1 = findViewById<TextView>(R.id.textView1)
-        val button1 = findViewById<Button>(R.id.button1)
+//        val textView1 = findViewById<TextView>(R.id.textView1)
+//        val button1 = findViewById<Button>(R.id.button1)
 
         textView1.setOnClickListener {
         Toast.makeText(this,"hai", Toast.LENGTH_LONG).show()
@@ -24,6 +24,11 @@ class MainActivity : AppCompatActivity() {
 
         button1.setOnClickListener {
             val intent = Intent(this@MainActivity, HitungActivity::class.java)
+            startActivity(intent)
+        }
+
+        button2.setOnClickListener {
+            val intent = Intent(this@MainActivity, GameActivity::class.java)
             startActivity(intent)
         }
     }

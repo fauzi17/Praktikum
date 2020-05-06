@@ -41,7 +41,7 @@ class HitungActivity : AppCompatActivity() {
                 val lebar = stringLebar.toFloat()
                 val tinggi = stringTinggi.toFloat()
 
-                textHasil.text = (panjang * lebar * tinggi).toString()
+                textHasil1.text = (panjang * lebar * tinggi).toString()
             }
         }
     }
